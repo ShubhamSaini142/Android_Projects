@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         n1 = (EditText) findViewById(R.id.Number_1);
@@ -34,10 +33,16 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1 = Integer.parseInt(n1.getText().toString());
-                int num2 = Integer.parseInt(n2.getText().toString());
-                int sum = num1 + num2;
-                result.setText(Integer.toString(sum));
+                try {
+                    int num1 = Integer.parseInt(n1.getText().toString());
+                    int num2 = Integer.parseInt(n2.getText().toString());
+                    int sum = num1 + num2;
+                    result.setText(Integer.toString(sum));
+
+                }catch (Exception e){
+                    result.setText("Enter Both Value");
+                }
+
             }
         });
 
@@ -49,10 +54,15 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1 = Integer.parseInt(n1.getText().toString());
-                int num2 = Integer.parseInt(n2.getText().toString());
-                int sum = num1 - num2;
-                result.setText(Integer.toString(sum));
+                try {
+                    int num1 = Integer.parseInt(n1.getText().toString());
+                    int num2 = Integer.parseInt(n2.getText().toString());
+                    int sum = num1 - num2;
+                    result.setText(Integer.toString(sum));
+                }catch (Exception e){
+                    result.setText("Enter Both Value");
+
+                }
             }
         });
 
@@ -64,10 +74,14 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num1 = Integer.parseInt(n1.getText().toString());
-                int num2 = Integer.parseInt(n2.getText().toString());
-                int sum = num1 * num2;
-                result.setText(Integer.toString(sum));
+                try {
+                    int num1 = Integer.parseInt(n1.getText().toString());
+                    int num2 = Integer.parseInt(n2.getText().toString());
+                    int sum = num1 * num2;
+                    result.setText(Integer.toString(sum));
+                }catch (Exception e){
+                    result.setText("Enter Both Value");
+                }
             }
         });
 
@@ -79,10 +93,14 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Double num1 = Double.parseDouble(n1.getText().toString());
-                Double num2 = Double.parseDouble(n2.getText().toString());
-                Double sum = num1 / num2;
-                result.setText(Double.toString(sum));
+                try {
+                    Double num1 = Double.parseDouble(n1.getText().toString());
+                    Double num2 = Double.parseDouble(n2.getText().toString());
+                    Double sum = num1 / num2;
+                    result.setText(Double.toString(sum));
+                }catch (Exception e){
+                    result.setText("Enter Both Value");
+                }
             }
         });
 
