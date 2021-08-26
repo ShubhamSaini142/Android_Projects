@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <EditText
         android:id="@+id/edtText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="124dp"
         android:ems="10"
         android:hint="@string/enter_number"
         android:inputType="numberSigned"
@@ -20,15 +21,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/tableBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="124dp"
         android:text="@string/table"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toEndOf="@+id/edtText"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,26 +39,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
+        android:hint="Table is here"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:textSize="24sp"
-        android:hint="Table is here"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtText" />
 
-    <EditText
-        android:id="@+id/countEdt"
-        android:layout_width="wrap_content"
 
-        android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
-        android:ems="10"
-        android:hint="Enter the count"
-        android:inputType="numberSigned"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/tableBtn"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
