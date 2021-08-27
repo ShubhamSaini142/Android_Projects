@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener {
             var c1 : Int =   count++
             textview.setText(c1.toString())
-
         }
 
     }
