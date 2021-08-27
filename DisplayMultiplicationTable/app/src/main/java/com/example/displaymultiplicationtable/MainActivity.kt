@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun viewTable(){
-
         tableBtn.setOnClickListener {
             try {
                 tableTextView.setText("")
