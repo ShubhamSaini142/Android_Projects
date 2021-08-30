@@ -8,7 +8,6 @@ import android.widget.MediaController
 import android.widget.VideoView
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var videoView : VideoView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,5 +20,9 @@ class MainActivity : AppCompatActivity() {
         videoView.setVideoURI(uri)
         videoView.requestFocus()
         videoView.start()
+
+
+
+
     }
 }
